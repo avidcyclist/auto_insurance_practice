@@ -1,6 +1,11 @@
+import os
+from dotenv import load_dotenv
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import numpy as np
+
+# Load environment variables from the .env file
+load_dotenv()
 
 def load_data(file_path):
     print("Loading data...")
@@ -63,8 +68,12 @@ def detect_outliers(df, exclude_columns=None):
     return outliers
 
 if __name__ == "__main__":
-    file_path = 'C:\\Users\\Mitch\\Desktop\\auto-insurance-analysis\\data\\Road Accident Data.xlsx'
-    
+    # Load the file path from an environment variable
+    file_path = os.getenv('ROAD_ACCIDENT_DATA_PATH')
+
+    if not file_path:
+        raise ValueError("Please set the 'ROAD_ACCIDENT_DATA_PATH' environment variable.")
+
     data = load_data(file_path)
     print("Data Loaded")
     
