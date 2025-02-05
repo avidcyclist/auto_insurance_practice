@@ -7,7 +7,7 @@ This project aims to analyze auto insurance data obtained from Kaggle. The analy
 ```
 auto-insurance-analysis
 ├── data
-│   └── auto-insurance-data.xlsx
+│   └── Road Accident Data.xlsx
 ├── notebooks
 │   └── analysis.ipynb
 ├── src
@@ -18,7 +18,7 @@ auto-insurance-analysis
 
 ## Files Description
 
-- **data/auto-insurance-data.xlsx**: Contains the auto insurance data downloaded from Kaggle in Excel format.
+- **Road Accident Data.xlsx**: Contains the auto insurance data downloaded from Kaggle in Excel format.
   
 - **notebooks/analysis.ipynb**: A Jupyter notebook for data analysis, including code for loading the data, performing exploratory data analysis, and visualizing results.
 
